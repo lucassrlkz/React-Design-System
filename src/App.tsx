@@ -28,7 +28,7 @@ export function App() {
 							<Lock />
 						</TextInput.Icon>
 						<TextInput.Input
-							type="password"
+							type="email"
 							id="email"
 							placeholder="Digite seu e-mail"
 						/>
