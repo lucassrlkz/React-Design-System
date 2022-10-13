@@ -18,17 +18,31 @@ export default {
 	},
 } as Meta<TextProps>
 
-export const Default: StoryObj = {}
+export const Default: StoryObj<TextProps> = {}
 
 export const Small: StoryObj<TextProps> = {
 	args: {
 		size: "sm",
+	},
+	argTypes: {
+		asChild: {
+			table: {
+				disable: true,
+			},
+		},
 	},
 }
 
 export const Large: StoryObj<TextProps> = {
 	args: {
 		size: "lg",
+	},
+	argTypes: {
+		asChild: {
+			table: {
+				disable: true,
+			},
+		},
 	},
 }
 
@@ -39,6 +53,11 @@ export const CustomComponent: StoryObj<TextProps> = {
 	},
 	argTypes: {
 		children: {
+			table: {
+				disable: true,
+			},
+		},
+		asChild: {
 			table: {
 				disable: true,
 			},
