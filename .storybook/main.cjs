@@ -6,6 +6,7 @@ module.exports = {
 		"@storybook/addon-links",
 		"@storybook/addon-essentials",
 		"@storybook/addon-interactions",
+		"@storybook/addon-a11y",
 	],
 	framework: "@storybook/react",
 	core: {
@@ -15,8 +16,8 @@ module.exports = {
 		storyStoreV7: true,
 	},
 	viteFinal: (config, { configType }) => {
-		if (configType === "PRODUCTIONN") {
-			config.base = "react-design-system"
+		if (configType === "PRODUCTION") {
+			config.base = "/react-design-system/"
 		}
 		return config
 	},
