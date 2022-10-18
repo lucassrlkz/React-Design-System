@@ -19,11 +19,7 @@ jobs:
           node-version: 16
       
       - name: Install dependencies
-<<<<<<< HEAD
         run: npm ci 
-=======
-        run: npm ci --force
->>>>>>> main
 
       - name: Build Storybook
         run: npm run build-storybook
